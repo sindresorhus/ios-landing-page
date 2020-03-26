@@ -60,6 +60,18 @@ p {
 	width: 100%;
 }
 
+
+@media only screen and (max-width: 767px) {
+	.responsive.iphone {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.responsive .iphone-mask {
+		height: 300px;
+	}
+}
+
 @media only screen and (min-width: 767px) {
 	.responsive {
 		width: 50%;
@@ -232,11 +244,8 @@ p {
 }
 
 .iphone-mask {
-	position: absolute;
-	z-index: 10;
-	top: 0;
-	left: 0;
 	display: block;
+	height: 500px;
 }
 
 .footer {
