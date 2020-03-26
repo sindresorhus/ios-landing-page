@@ -301,3 +301,14 @@ p {
 		padding-left: 12px;
 	}
 }
+
+
+.headline {
+	text-decoration: underline;
+	margin-bottom: 8px;
+	font-size: 22px;
+}
+
+.headline.h2 {
+	font-size: 28px;
+}
