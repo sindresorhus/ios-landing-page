@@ -38,6 +38,33 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.app-btn {
+	width: 45%;
+	max-width: 160px;
+	padding: 5px 10px;
+	margin: 20px 10px;
+	text-align: left;
+	font-size: 10px;
+}
+
+.app-btn i {
+	width: 20%;
+	text-align: center;
+	font-size: 28px;
+	margin-right: 7px;	
+}
+
+.app-btn .big-txt {
+	font-size: 17px;
+	text-transform: capitalize;
+}
+   
 a:link,
 a:visited {
 	text-decoration: none;
@@ -95,15 +122,18 @@ p {
 
 .primary-btn {
 	padding: 15px;
-	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.5);
-	border: 2px solid rgba(255, 255, 255, 0.6);
-	border-radius: 3px;
 	font-size: 15px;
 	font-weight: 500;
 }
 
-.primary-btn:hover {
+.primary-btn, .app-btn {
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	border-radius: 3px;
+}
+
+.primary-btn:hover, .app-btn:hover {
 	transition: all 0.1s ease-in-out;
 	color: #21272f;
 	background: #fff;
@@ -142,12 +172,6 @@ p {
 		margin-bottom: 0;
 		text-align: left;
 	}
-}
-
-.app-store-btn::before {
-	padding-right: 8px;
-	content: '';
-	font-size: 16px;
 }
 
 .app-icon {
